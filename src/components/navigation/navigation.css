@@ -1,0 +1,33 @@
+nav {
+    width: 100vw;
+    /* background-color: yellow; */
+    /* text-align: center; */
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;
+    position:relative;
+    margin-left: 50%; */
+}
+
+nav li {
+    display: inline-block;
+}
+
+/* #logoPokeball{
+    width: 10vh;
+    height: 10vh;
+} */
+
+#logoPokemon{
+    display: flex;
+}
+
+#navBarContainer{
+    width: 90%;
+    /* background-color: red; */
+    height: 30vh;
+    margin-left: 5%;
+    display: flex;
+    text-align:center;
+    align-items: center;
+}
