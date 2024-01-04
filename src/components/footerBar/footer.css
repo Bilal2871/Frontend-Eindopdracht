@@ -1,11 +1,10 @@
 #footerContainer{
-    background-color: #FFCB05;
+    background-color:var(--pokemon-yellow);
     width: 100%;
-    height:10vh;
-    color: #3466AF;
+    height: 10vh;
+    color:var(--pokemon-blue);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size:1.5vh;
 }
-

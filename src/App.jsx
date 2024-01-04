@@ -17,6 +17,7 @@ function App() {
     
       <Routes>
         <Route path = "/"             element = {<Overview/>} />
+        <Route path = "/overview"     element = {<Overview/>} />
         <Route path = "/allPokemons"  element = {<Pokemons/>} />
         <Route path = "/contact"      element = {<Contact/>}  />
         {/* <Route path="*" element={<NotFound />} /> deze nog erin zetten */}
