@@ -1,10 +1,12 @@
 import React from "react";
 import './overview.css';
+import Pokemons from "../../components/allPokemons/allPokemons";
 
 function Overview(){
     return (
         <section id="overviewContainer">
-            <h1>Overview</h1>
+            <h1>Overzicht van alle pokemons</h1>
+            <Pokemons />
         </section>
     )
 }

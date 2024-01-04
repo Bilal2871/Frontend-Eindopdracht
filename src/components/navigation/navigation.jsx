@@ -15,7 +15,7 @@ function Navigation(){
                             <img src={pokeball} alt="" srcset="" id="logoPokeball"/>
                         </li> */}
                         <li>
-                            <img src={pokemon} alt="" srcset="" id="logoPokemon"/>
+                            <img src={pokemon} alt="" id="logoPokemon"/>
                         </li>
                         {/* <li>
                         <NavLink to="/overview">Home</NavLink>
