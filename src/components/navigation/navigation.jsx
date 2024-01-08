@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
-import pokeball from '../../assets/pokeball.jpeg';
-import pokemon from '../../assets/pokemon.png';
+import pokeball from '../../assets/pokeball.png';
+import pokemon from '../../assets/pokemon_logo.png';
 import './navigation.css';
 
 
@@ -38,13 +38,14 @@ function Navigation(){
           <img src={pokemon} alt="" id="logoPokemon"/>
         </div>
         <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
+        <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
       </label>
         <ul class="menu">
           <li>Inloggen/registreren</li>
           <li><NavLink to="/overview">Overzicht</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
+          {/* <li><NavLink to="/contact">Contact</NavLink></li> */}
+          <li><NavLink to="/contact">Zoeken</NavLink></li>
           <li>Favorieten</li>
         </ul>
       </section>

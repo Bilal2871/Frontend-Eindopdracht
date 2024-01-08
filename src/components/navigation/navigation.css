@@ -14,12 +14,14 @@ nav li {
 }
 
 #logoPokeball{
-    width: 8vh;
-    height: 8vh;
+    width: 6vh;
+    height: 6vh;
 } 
 
 #logoPokemon{
-    display: flex;
+    display: flex;    
+    width: 14vh;
+    height: 14vh;
 }
 
 #navBarContainer{
