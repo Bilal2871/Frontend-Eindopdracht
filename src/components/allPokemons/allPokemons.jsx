@@ -14,6 +14,8 @@ function Pokemons({}){
     }, []);
 
     async function getAllPokemons(){
+        console.log(loadMore);
+
         try {
             const response = await axios.get(loadMore);
             setAllPokemons(response.data.results);

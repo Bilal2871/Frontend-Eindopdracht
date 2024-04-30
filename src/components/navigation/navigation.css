@@ -149,8 +149,8 @@ h2 {
       margin: 0;
       padding: 0.5em 0;
       width: 100%;
-      color: white;
-      background-color: #222;
+      color:  var(--pokemon-yellow);
+      background-color:  var(--pokemon-blue);
     }
     .menu > li:not(:last-child) {
       border-bottom: 1px solid #444;
