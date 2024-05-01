@@ -37,8 +37,38 @@ function Pokemons(){
         }
         setIsLoading(false);
     }
-
     
+        // For the detail page
+        const handlePokemonClick = (pokemon) => {
+            setSelectedPokemon(pokemon);
+        }
+    
+        // Amount of pages
+        const totalPages = Math.ceil(searchedPokemons.length / itemsPerPage);
+    
+        const beginPage = () => {
+            setCurrentPage(1);
+        }
+    
+        const endPage = () => {
+            setCurrentPage(totalPages);
+        }
+    
+        const nextPage = () => {
+            setCurrentPage(prevPage => {
+                // Check if it has reached the end of the searchedPokemons array
+                if ((prevPage + 1) * itemsPerPage < searchedPokemons.length) {
+                    return prevPage + 1;
+                }
+                // Reached the end? Then stay on the current page
+                return prevPage;
+            });
+        }
+    
+        const prevPage = () => {
+            setCurrentPage(prevPage => prevPage > 1 ? prevPage - 1 : prevPage);
+        }
+        
     return (
         <section>
             <article>
