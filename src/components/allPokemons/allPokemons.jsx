@@ -3,27 +3,42 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../pokemonDetail/pokemon';
 
-function Pokemons({}){
-    const [allPokemons, setAllPokemons]     = useState({});
-    const [loadMore, setLoadMore]           = useState('https://pokeapi.co/api/v2/pokemon?limit=20');
-    // const [loading, toggleLoading]  = useState(false);
-    // const [error, toggleError]      = useState(false);
+function Pokemons(){
+    const [allPokemons, setAllPokemons] = useState([]);
+    const [displayedPokemons, setDisplayedPokemons] = useState([]);
+    const [searchedPokemons, setSearchedPokemons] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 12; // pokemon amount
+    const [isLoading, setIsLoading] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [selectedPokemon, setSelectedPokemon] = useState(null);
+    const [favorites, setFavorites] = useState([]);
 
     useEffect (() =>{
         void getAllPokemons();
     }, []);
 
-    async function getAllPokemons(){
-        console.log(loadMore);
+     // Use this to get all the pages
+     useEffect(() => {
+        const start = (currentPage - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        setDisplayedPokemons(searchedPokemons.slice(start, end));
+    }, [currentPage, searchedPokemons]);
 
+    // This is used to get the pokemons for the overview
+    async function getAllPokemons(){
+        setIsLoading(true);
         try {
-            const response = await axios.get(loadMore);
-            setAllPokemons(response.data.results);
-            console.log(response.data.results);
+            const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=1000');
+            const pokemonData = await Promise.all(response.data.results.map(pokemon => getPokemonData(pokemon.url)));
+            setAllPokemons(pokemonData);
         } catch (e) {
             console.error('er gaat iets mis');
-         }
+        }
+        setIsLoading(false);
     }
+
+    
     return (
         <section>
             <article>
