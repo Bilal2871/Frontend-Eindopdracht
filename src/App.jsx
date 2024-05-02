@@ -5,7 +5,13 @@ import Overview from './pages/overview/overview';
 import Contact from './pages/contact/contact';
 import Navigation from './components/navigation/navigation';
 import FooterBar from './components/footerBar/footer';
-
+/*
+import PokemonDetail from './components/pokemonDetail/pokemonDetail';
+import Login from './components/user/loginComponent';
+import Register from './components/user/registerComponent';
+import Favorites from './pages/favorites/favorites';
+import AccountOverview from "./pages/user/accountOverview.jsx";
+*/
 function App() {
 
   return (
