@@ -1,7 +1,11 @@
 import './allPokemons.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../pokemonDetail/pokemon';
+import loadingImage from '../../assets/pokeball.png';
+import PokemonDetail from '../pokemonDetail/pokemonDetail';
+import Pagination from './pagination';
+import {toggleFavorite} from "../favorites/favoriteFunction.jsx";
+import authService from "../../services/AuthService.js";
 
 function Pokemons(){
     const [allPokemons, setAllPokemons] = useState([]);
