@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom';
 import pokemon from '../../assets/pokemon_logo.png';
 import './navigation.css';
-import AuthService from '../../services/authService';
+import AuthService from '../../services/AuthService';
 
 function Navigation(){
     const [isLoggedIn, setIsLoggedIn] = useState(AuthService.isLoggedIn());

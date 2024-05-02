@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import AuthService from '../../services/authService';
+import AuthService from '../../services/AuthService';
 import React, { useState, useEffect } from 'react';
 import PokemonDetail from "../pokemonDetail/pokemonDetail.jsx";
 import { toggleFavorite } from './favoriteFunction.jsx';
-import authService from "../../services/authService";
+import authService from "../../services/AuthService";
 
 export default function Favorites() {
     const navigate = useNavigate();
