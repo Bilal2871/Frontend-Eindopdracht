@@ -25,6 +25,29 @@ function Pokemons(){
         setDisplayedPokemons(searchedPokemons.slice(start, end));
     }, [currentPage, searchedPokemons]);
 
+    // Search function
+    useEffect(() => {
+        setSearchedPokemons(allPokemons.filter(pokemon => pokemon.name.includes(searchTerm)));
+    }, [searchTerm, allPokemons]);
+
+    // Used for the favorites
+    useEffect(() => {
+        const favoriteNames = JSON.parse(localStorage.getItem('favorites')) || [];
+        setFavorites(favoriteNames);
+    }, []);
+
+    // API date
+    async function getPokemonData(url) {
+        const response = await axios.get(url);
+        return response.data;
+    }
+
+    // When pressed toggle favorite this handles that
+    const handleToggleFavorite = (name) => {
+        const updatedFavorites = toggleFavorite(name, favorites);
+        setFavorites(updatedFavorites);
+    };
+
     // This is used to get the pokemons for the overview
     async function getAllPokemons(){
         setIsLoading(true);
