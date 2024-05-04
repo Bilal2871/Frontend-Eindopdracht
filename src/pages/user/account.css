@@ -1,0 +1,30 @@
+#accountContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    padding: 2rem;
+}
+
+#accountContainer h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+#accountContainer p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url("../../assets/pokeball.png");
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+}
