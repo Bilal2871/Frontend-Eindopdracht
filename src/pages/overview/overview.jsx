@@ -1,4 +1,3 @@
-import React from "react";
 import './overview.css';
 import Pokemons from "../../components/allPokemons/allPokemons";
 
