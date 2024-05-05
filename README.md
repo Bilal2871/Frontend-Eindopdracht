@@ -1,8 +1,7 @@
-# React + Vite
+# Pokemon applicatie
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Inleiding
+De reden dat deze website tot stand is het volgende, ik wou een overzichtelijke en strakke manier voor het bekijken van pokemons. Daarvoor heb ik een eenvoudige tool waarmee je makkelijk pokemons kan opzoeken. De oplossing hiervoor is de tool die ik heb gemaakt, een overzicht van alle pokemons. Waarin je ook makkelijk een pokemon kan opzoeken door middel van de zoekfunctie. Daarnaast kan een gebruiker registreren als die daar behoefte aan heeft. Om vervolgens favorieten aan je account toe te kunnen voegen.De applicatie is ontwikkeld als eindopdracht voor de Frontend Leerlijn, op NOVI Hogeschool.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Benodigheden
+Voor deze applicatie heb je een aantal dingen nodig om dit te kunnen laten werken. Om te beginnen kun je de link naar de Github Repository hier vinden. Daarnaast is er bij deze applicatie gebruik gemaakt van NOVI-backend om het inloggen en registreren te kunnen realiseren. De documentatie daarvoor kun je hier terug vinden. 
