@@ -6,7 +6,8 @@ body {
 
 #overviewContainer{
     width: 90%;
-    margin: 0 auto;
+    margin: auto auto auto auto;
+    padding-bottom: 7rem;
 }
 
 #overviewContainer h1 {

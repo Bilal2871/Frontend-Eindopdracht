@@ -3,7 +3,7 @@ import './footer.css';
 
 function FooterBar(){
     return (
-        <section className="footerContainer">
+        <section id="footerContainer">
             <h1>© Bilal Abchrim, Eindopdracht Frontend, NOVI Hogeschool</h1>
         </section>
     )

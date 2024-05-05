@@ -34,7 +34,11 @@
   text-decoration: none;
 }
 
-.auth-buttons {
+.favorites {
+  cursor: pointer;
+}
+
+.auth-buttons, .auth-buttons-real {
   display: flex;
   gap: 1rem;
   flex: 1;
@@ -70,6 +74,10 @@
   }
 
   .menu-real {
+    display: none;
+  }
+
+  .auth-buttons-real {
     display: none;
   }
 }

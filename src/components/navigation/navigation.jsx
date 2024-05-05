@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import pokemon from '../../assets/pokemon_logo.png';
 import './navigation.css';
-import AuthService from '../../services/AuthService';
+import AuthService from '../../services/AuthService.js';
 
 function Navigation(){
     const [isLoggedIn, setIsLoggedIn] = useState(AuthService.isLoggedIn());
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const checkLoginStatus = () => {
@@ -30,6 +31,14 @@ function Navigation(){
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleFavoritesClick = () => {
+        if (!isLoggedIn) {
+            navigate('/login');
+        } else {
+            navigate('/favorites');
+        }
+    };
+
     return (
         <section className="top-nav">
             <div className="logo-container">
@@ -39,19 +48,26 @@ function Navigation(){
                 <i className="fas fa-bars"></i>
             </div>
             {isMenuOpen && (
-                <ul className="menu">
-                    <li><NavLink to="/overview" onClick={toggleMenu}>Overzicht</NavLink></li>
-                    {isLoggedIn && <li><NavLink to="/favorites" onClick={toggleMenu}>Favorieten</NavLink></li>}
-                    {isLoggedIn && <li><NavLink to="/account" onClick={toggleMenu}>Account</NavLink></li>}
-                </ul>
+                <>
+                    <ul className="menu">
+                        <li><NavLink to="/overview">Overzicht</NavLink></li>
+                        <li><NavLink to="/favorites">Favorieten</NavLink></li>
+                        {isLoggedIn && <li><NavLink to="/account">Account</NavLink></li>}
+                    </ul>
+                    <div className="auth-buttons">
+                        {!isLoggedIn && <NavLink to="/login" className="auth-button">Inloggen</NavLink>}
+                        {!isLoggedIn && <NavLink to="/register" className="auth-button">Registreren</NavLink>}
+                        {isLoggedIn && <button onClick={handleLogout} className="auth-button">Uitloggen</button>}
+                    </div>
+                </>
             )}
             <ul className="menu-real">
-                <li><NavLink to="/overview" onClick={toggleMenu}>Overzicht</NavLink></li>
-                {isLoggedIn && <li><NavLink to="/favorites" onClick={toggleMenu}>Favorieten</NavLink></li>}
-                {isLoggedIn && <li><NavLink to="/account" onClick={toggleMenu}>Account</NavLink></li>}
+                <li><NavLink to="/overview">Overzicht</NavLink></li>
+                <li><a className="favorites" onClick={handleFavoritesClick}>Favorieten</a></li>
+                {isLoggedIn && <li><NavLink to="/account">Account</NavLink></li>}
             </ul>
-            <div className="auth-buttons">
-                {!isLoggedIn && isMenuOpen ? (
+            <div className="auth-buttons-real">
+                {!isLoggedIn ? (
                     <>
                         <NavLink to="/login" className="auth-button">Inloggen</NavLink>
                         <NavLink to="/register" className="auth-button">Registreren</NavLink>
@@ -61,7 +77,7 @@ function Navigation(){
                 )}
             </div>
         </section>
-    )
+    );
 }
 
 export default Navigation;
