@@ -12,7 +12,7 @@ function Pokemons(){
     const [displayedPokemons, setDisplayedPokemons] = useState([]);
     const [searchedPokemons, setSearchedPokemons] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 12; // pokemon amount
+    const itemsPerPage = 12; // pokemon amount per page
     const [isLoading, setIsLoading] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedPokemon, setSelectedPokemon] = useState(null);

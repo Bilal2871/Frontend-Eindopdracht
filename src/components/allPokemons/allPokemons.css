@@ -65,7 +65,6 @@ button:disabled {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* existing styles */
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
 }
@@ -101,7 +100,7 @@ p {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /*Responsive*/
     #footerContainer {
         height: auto;
         padding: 1rem;

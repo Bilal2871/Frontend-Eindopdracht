@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Pagination({ currentPage, totalPages, beginPage, prevPage, nextPage, endPage }) {
+function Pagination({ currentPage, totalPages, beginPage, prevPage, nextPage, endPage }) { // Parameters for the pagination and the retun with the button
     return (
         <div className="buttons">
             <button onClick={beginPage} disabled={currentPage === 1}>Begin</button>
