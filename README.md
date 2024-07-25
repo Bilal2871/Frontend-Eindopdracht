@@ -41,3 +41,8 @@ git commit -m "description" om alle wijzigingen te committen en klaar te zetten 
 git log om te zien welke commits er klaar staan voor de push.
 git push origin name-of-branch om wijzigingen naar Git te pushen als je op een feature branch werkt.
 git push origin main om wijzigingen naar Git te pushen als je op de main branch werkt.
+
+
+
+--------------
+Link naar mijn project : https://github.com/Bilal2871/frontend-eindopdracht/tree/main 
