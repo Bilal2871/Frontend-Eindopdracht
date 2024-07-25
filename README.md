@@ -25,7 +25,7 @@ Na deze stap kun je de applicatie starten met het volgende commando:
 npm run dev
 Open http://localhost:5173/ om de pagina in je browser te bekijken. Elke keer als je een bestand opslaat, kun je de wijzigingen hier terugzien. Gebruik ook de Devtools in je browser voor extra informatie.
 
-5. Overige commando’s
+#5. Overige commando’s
 Om verder te werken aan dit project en je werk op te slaan, is het belangrijk om eerst de huidige repository los te koppelen. Dit doe je met het volgende commando:
 
 git remote remove origin
