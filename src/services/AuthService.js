@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://frontend-educational-backend.herokuapp.com/api/auth/';
+const API_URL = 'https://frontend-educational-backend.herokuapp.com/api/auth/'; // School API
 
 class AuthService {
     login(username, password) {

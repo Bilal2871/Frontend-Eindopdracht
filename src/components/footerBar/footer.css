@@ -1,5 +1,5 @@
 #footerContainer{
-    background-color:var(--pokemon-yellow);
+    background-color:var(--pokemon-yellow); /*Css variable used*/
     width: 100%;
     height: 10vh;
     color:var(--pokemon-blue);

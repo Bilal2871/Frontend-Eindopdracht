@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFCB05;
+  background-color:var(--pokemon-yellow);
   color: #333;
   padding: 1rem;
   height: 10vh;

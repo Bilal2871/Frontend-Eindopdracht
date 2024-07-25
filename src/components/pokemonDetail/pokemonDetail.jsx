@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function PokemonDetail({ pokemon, onClose }) {
 
-    return (
+    return ( //Used for the pokemon to put them in a card.
         <>
             <div className="overlay"></div>
             <div className="pokemon-detail-popup">
