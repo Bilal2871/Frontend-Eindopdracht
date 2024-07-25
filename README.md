@@ -11,24 +11,27 @@ Voor deze applicatie heb je een paar zaken nodig om alles goed te laten werken. 
 
 # 4. De applicatie draaien
 Applicatie starten
+
 Clone het project vanuit Git naar jouw lokale machine (gebruik een IDE naar keuze). Let op dat je bij het kopiëren van de link voor "SSH" kiest. Vergeet niet om Node.js & npm te installeren, omdat deze nodig zijn om de applicatie te draaien. Om de nieuwste versie te downloaden, voer je het volgende commando uit in je terminal:
 
 npm install -g npm
+
 Weet je niet zeker of je dit al hebt geïnstalleerd, of wil je weten welke versie je hebt? Gebruik dan de volgende commando's om dit te controleren:
 
 node -v
 npm -v
-Top: Nu kun je de benodigde packages uit de node_modules installeren. Dit doe je met het volgende commando:
+
+Fijn: Nu kun je de benodigde packages uit de node_modules installeren. Dit doe je met het volgende commando:
 
 npm install
-Na deze stap kun je de applicatie starten met het volgende commando:
+Nu kun je de applicatie starten met het volgende commando:
 
 npm run dev
-Open http://localhost:5173/ om de pagina in je browser te bekijken. Elke keer als je een bestand opslaat, kun je de wijzigingen hier terugzien. Gebruik ook de Devtools in je browser voor extra informatie.
+Open http://localhost:5173/ om de pagina in je browser te bekijken. Voor elke keer als je een bestand opslaat, kun je deze wijzigingen hier terugzien. Gebruik ook de Devtools in je browser voor extra informatie.
 
 # 5. Overige commando’s
 
-Om verder te werken aan dit project en je werk op te slaan, is het belangrijk om eerst de huidige repository los te koppelen. Dit doe je met het volgende commando:
+Om heirmee verder te werken aan dit project en je werk op te slaan, is het erg belangrijk om eerst de huidige repository los te koppelen. Dit doe je met het volgende commando:
 
 git remote remove origin
 Maak vervolgens een nieuwe repository aan op Git en koppel deze aan jouw project. Werk je met meerdere mensen aan hetzelfde project? Dan is het verstandig om op een feature branch te werken. Deze maak je aan met het volgende commando:
