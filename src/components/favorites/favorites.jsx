@@ -1,3 +1,7 @@
+//This React component manages a user's favorite Pokémon list. 
+//If the user is not logged in, they are redirected to the login page; otherwise, their favorite Pokémon are fetched from local storage and displayed. 
+//Users can toggle favorite status and view Pokémon details by clicking on a Pokémon card.
+
 import { useNavigate } from 'react-router-dom';
 import AuthService from '../../services/AuthService';
 import React, { useState, useEffect } from 'react';
