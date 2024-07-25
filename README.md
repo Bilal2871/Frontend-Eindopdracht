@@ -4,6 +4,7 @@
 De reden dat deze website tot stand is het volgende, ik wou een overzichtelijke en strakke manier voor het bekijken van pokemons. Daarvoor heb ik een eenvoudige tool waarmee je makkelijk pokemons kan opzoeken. De oplossing hiervoor is de tool die ik heb gemaakt, een overzicht van alle pokemons. Waarin je ook makkelijk een pokemon kan opzoeken door middel van de zoekfunctie. Daarnaast kan een gebruiker registreren als die daar behoefte aan heeft. Om vervolgens favorieten aan je account toe te kunnen voegen. De applicatie is ontwikkeld als eindopdracht voor de Frontend Leerlijn, op NOVI Hogeschool.
 
 # 2. Screenshot
+![image](https://github.com/user-attachments/assets/ed1cc23c-4d8f-4fe5-8f13-a1dab4b8add7)
 
 # 3. Benodigdheden
 Voor deze applicatie heb je een paar zaken nodig om alles goed te laten werken. Allereerst kun je de link naar de Github Repository hier vinden. Verder maakt deze applicatie gebruik van de NOVI-backend voor inloggen en registreren. De documentatie daarvoor vind je hier: https://github.com/hogeschoolnovi/novi-educational-backend-documentation?tab=readme-ov-file#0-inloggen
@@ -25,7 +26,8 @@ Na deze stap kun je de applicatie starten met het volgende commando:
 npm run dev
 Open http://localhost:5173/ om de pagina in je browser te bekijken. Elke keer als je een bestand opslaat, kun je de wijzigingen hier terugzien. Gebruik ook de Devtools in je browser voor extra informatie.
 
-#5. Overige commando’s
+# 5. Overige commando’s
+
 Om verder te werken aan dit project en je werk op te slaan, is het belangrijk om eerst de huidige repository los te koppelen. Dit doe je met het volgende commando:
 
 git remote remove origin
