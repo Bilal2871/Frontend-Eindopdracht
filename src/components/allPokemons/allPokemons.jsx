@@ -22,14 +22,14 @@ function Pokemons(){
         void getAllPokemons();
     }, []);
 
-     // Use this to get all the pages
+     // Get all the pages
      useEffect(() => {
         const start = (currentPage - 1) * itemsPerPage;
         const end = start + itemsPerPage;
         setDisplayedPokemons(searchedPokemons.slice(start, end));
     }, [currentPage, searchedPokemons]);
 
-    // Search function
+    // This is the useEffect used for the searchfuntion
     useEffect(() => {
         setSearchedPokemons(allPokemons.filter(pokemon => pokemon.name.includes(searchTerm)));
     }, [searchTerm, allPokemons]);
@@ -40,19 +40,19 @@ function Pokemons(){
         setFavorites(favoriteNames);
     }, []);
 
-    // API date
+    // API data
     async function getPokemonData(url) {
         const response = await axios.get(url);
         return response.data;
     }
 
-    // When pressed toggle favorite this handles that
+    // When pressed toggle favorite this updates your favorites
     const handleToggleFavorite = (name) => {
         const updatedFavorites = toggleFavorite(name, favorites);
         setFavorites(updatedFavorites);
     };
 
-    // This is used to get the pokemons for the overview
+    // This is used to get all the pokemons for the overview
     async function getAllPokemons(){
         setIsLoading(true);
         try {
@@ -65,12 +65,12 @@ function Pokemons(){
         setIsLoading(false);
     }
     
-        // For the detail page
+        // Used for the detail page
         const handlePokemonClick = (pokemon) => {
             setSelectedPokemon(pokemon);
         }
     
-        // Amount of pages
+        // The total amount of pages
         const totalPages = Math.ceil(searchedPokemons.length / itemsPerPage);
     
         const beginPage = () => {
@@ -100,10 +100,10 @@ function Pokemons(){
         <section>
             <article>
                 <h3 className="h3-page-number">Pagina {currentPage}</h3>
-                <input className="search-bar" type="text" placeholder="Zoeken..." onChange={e => setSearchTerm(e.target.value)} />
+                <input className="search-bar" type="text" placeholder="Voer de naam van je Pokémon in voor zoekresultaten" onChange={e => setSearchTerm(e.target.value)} />
                 {isLoading ? (
                     <div className="pokemon-load">
-                        <img src={loadingImage} width="50" height="auto" alt="Loading..."/>
+                        <img src={loadingImage} width="50" height="auto" alt="Het overzicht is aan het laden..."/>
                         <p>Loading...</p>
                     </div>) : (
                     <>
@@ -127,7 +127,7 @@ function Pokemons(){
                         {displayedPokemons.length === 0 && <p>Er ging iets mis bij het ophalen van alle Pokèmons...</p>}
                     </>
                 )}
-                <Pagination
+                <Pagination // Pagination component
                     currentPage={currentPage}
                     totalPages={totalPages}
                     beginPage={beginPage}
