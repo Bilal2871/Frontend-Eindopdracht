@@ -66,7 +66,9 @@ git push origin main               om wijzigingen naar Git te pushen als je op d
 
 # 6. BELANGRIJK VOOR BIJ HET RUNNEN VAN DE applicatie
 ![image](https://github.com/user-attachments/assets/d26048b0-8852-47d1-84f2-f50412c63910)
-Op het moment dat je de ZIP uitpakt en opent in je editor. Is het wel belangrijk dat je eerst naar de juiste mappen gaat de stappen staan hieronder en dan pas de applicatie opstart.(Zelf getest en met bijbehorende screenshot moet dit dus werken)
+Op het moment dat je de ZIP uitpakt en opent in je editor. Is het wel belangrijk dat je eerst naar de juiste mappen gaat de stappen staan hieronder en dan pas de applicatie opstart.(Zelf getest en met bijbehorende screenshot moet dit dus werken).
+
+
 cd .\Frontend-Eindopdracht\        
 
 
