@@ -24,19 +24,24 @@ npm -v
 Fijn: Nu kun je de benodigde packages uit de node_modules installeren. Dit doe je met het volgende commando:
 
 npm install
+
 Nu kun je de applicatie starten met het volgende commando:
 
 npm run dev
+
+
 Open http://localhost:5173/ om de pagina in je browser te bekijken. Voor elke keer als je een bestand opslaat, kun je deze wijzigingen hier terugzien. Gebruik ook de Devtools in je browser voor extra informatie.
 
 # 5. Overige commando’s
 
-Om heirmee verder te werken aan dit project en je werk op te slaan, is het erg belangrijk om eerst de huidige repository los te koppelen. Dit doe je met het volgende commando:
+Om hiermee verder te werken aan dit project en je werk op te slaan, is het erg belangrijk om eerst de huidige repository los te koppelen. Dit doe je met het volgende commando:
 
 git remote remove origin
+
 Maak vervolgens een nieuwe repository aan op Git en koppel deze aan jouw project. Werk je met meerdere mensen aan hetzelfde project? Dan is het verstandig om op een feature branch te werken. Deze maak je aan met het volgende commando:
 
 git checkout -b name-of-branch
+
 Andere veelgebruikte commando's zijn:
 
 git init .                         om Git te initialiseren in jouw project. LET OP! Als je een project clone't, gebeurt dit automatisch al.
