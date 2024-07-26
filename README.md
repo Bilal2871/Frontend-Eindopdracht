@@ -68,8 +68,14 @@ git push origin main               om wijzigingen naar Git te pushen als je op d
 ![image](https://github.com/user-attachments/assets/d26048b0-8852-47d1-84f2-f50412c63910)
 Op het moment dat je de ZIP uitpakt en opent in je editor. Is het wel belangrijk dat je eerst naar de juiste mappen gaat de stappen staan hieronder en dan pas de applicatie opstart.(Zelf getest en met bijbehorende screenshot moet dit dus werken)
 cd .\Frontend-Eindopdracht\        
+
+
 cd .\Pokemon\
+
+
 npm install
+
+
 npm run dev
 
 Link naar mijn project : https://github.com/Bilal2871/frontend-eindopdracht/tree/main 
