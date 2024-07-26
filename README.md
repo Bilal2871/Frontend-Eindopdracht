@@ -45,11 +45,23 @@ git checkout -b name-of-branch
 Andere veelgebruikte commando's zijn:
 
 git init .                         om Git te initialiseren in jouw project. LET OP! Als je een project clone't, gebeurt dit automatisch al.
+
+
 git add .                          om alle wijzigingen te stagen.
+
+
 git status                         om de status van gestagede bestanden te zien.
+
+
 git commit -m "description"        om alle wijzigingen te committen en klaar te zetten voor de push.
+
+
 git log                            om te zien welke commits er klaarstaan voor de push.
+
+
 git push origin name-of-branch     om wijzigingen naar Git te pushen als je op een feature branch werkt.
+
+
 git push origin main               om wijzigingen naar Git te pushen als je op de main branch werkt.
 
 # 6. BELANGRIJK VOOR BIJ HET RUNNEN VAN DE applicatie
