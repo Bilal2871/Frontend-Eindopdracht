@@ -10,6 +10,7 @@ Voor deze applicatie heb je een aantal dingen nodig om dit te kunnen laten werke
 
 # 4. De applicatie draaien
 Applicatie starten
+<<<<<<< HEAD
 Om te beginnen clone je het project vanuit Git naar jouw lokale machine (een IDE naar keuze). Let op dat je bij het kopiëren van de link voor "SSH" kiest. Daarnaast is er een stap die je niet over kan slaan, dat is namelijk het zorgen voor de installatie van Node.js & npm. Deze heb je namelijk nodig om de applicatie te kunnen runnen. Om de laatste versie hiervan te downloaden kun je het volgende commando uitvoeren in jouw terminal:
 
 npm install -g npm
@@ -46,3 +47,75 @@ git push origin main om wijzigingen naar Git te pushen als je op de main branch 
 
 --------------
 Link naar
+=======
+
+Clone het project vanuit Git naar jouw lokale machine (gebruik een IDE naar keuze). Let op dat je bij het kopiëren van de link voor "SSH" kiest. Vergeet niet om Node.js & npm te installeren, omdat deze nodig zijn om de applicatie te draaien. Om de nieuwste versie te downloaden, voer je het volgende commando uit in je terminal:
+
+npm install -g npm
+
+Weet je niet zeker of je dit al hebt geïnstalleerd, of wil je weten welke versie je hebt? Gebruik dan de volgende commando's om dit te controleren:
+
+node -v
+npm -v
+
+Fijn: Nu kun je de benodigde packages uit de node_modules installeren. Dit doe je met het volgende commando:
+
+npm install
+
+Nu kun je de applicatie starten met het volgende commando:
+
+npm run dev
+
+
+Open http://localhost:5173/ om de pagina in je browser te bekijken. Voor elke keer als je een bestand opslaat, kun je deze wijzigingen hier terugzien. Gebruik ook de Devtools in je browser voor extra informatie.
+
+# 5. Overige commando’s
+
+Om hiermee verder te werken aan dit project en je werk op te slaan, is het erg belangrijk om eerst de huidige repository los te koppelen. Dit doe je met het volgende commando:
+
+git remote remove origin
+
+Maak vervolgens een nieuwe repository aan op Git en koppel deze aan jouw project. Werk je met meerdere mensen aan hetzelfde project? Dan is het verstandig om op een feature branch te werken. Deze maak je aan met het volgende commando:
+
+git checkout -b name-of-branch
+
+Andere veelgebruikte commando's zijn:
+
+git init .                         om Git te initialiseren in jouw project. LET OP! Als je een project clone't, gebeurt dit automatisch al.
+
+
+git add .                          om alle wijzigingen te stagen.
+
+
+git status                         om de status van gestagede bestanden te zien.
+
+
+git commit -m "description"        om alle wijzigingen te committen en klaar te zetten voor de push.
+
+
+git log                            om te zien welke commits er klaarstaan voor de push.
+
+
+git push origin name-of-branch     om wijzigingen naar Git te pushen als je op een feature branch werkt.
+
+
+git push origin main               om wijzigingen naar Git te pushen als je op de main branch werkt.
+
+# 6. BELANGRIJK VOOR BIJ HET RUNNEN VAN DE applicatie
+![image](https://github.com/user-attachments/assets/d26048b0-8852-47d1-84f2-f50412c63910)
+Op het moment dat je de ZIP uitpakt en opent in je editor. Is het wel belangrijk dat je eerst naar de juiste mappen gaat de stappen staan hieronder en dan pas de applicatie opstart.(Zelf getest en met bijbehorende screenshot moet dit dus werken).
+
+
+cd .\Frontend-Eindopdracht\        
+
+
+cd .\Pokemon\
+
+
+npm install
+
+
+npm run dev
+
+Link naar mijn project : https://github.com/Bilal2871/frontend-eindopdracht/tree/main 
+>>>>>>> f1798c96e264c541e70bf38a3625ab93c2e96e2e
