@@ -45,4 +45,4 @@ git push origin main om wijzigingen naar Git te pushen als je op de main branch 
 
 
 --------------
-Link naar mijn project : https://github.com/Bilal2871/frontend-eindopdracht/tree/main 
+Link naar
